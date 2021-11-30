@@ -42,10 +42,12 @@ df.createOrReplaceTempView('_df')
 # COMMAND ----------
 
 df.count()
+df.createOrReplaceTempView('_df')
 
 # COMMAND ----------
 
 df.saveAsTable('test')
+
 
 # COMMAND ----------
 
