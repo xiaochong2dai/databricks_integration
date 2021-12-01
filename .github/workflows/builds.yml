@@ -15,3 +15,7 @@ jobs:
           --header 'Authorization: token ${{ secrets.DB_TOKEN }}' \
           --header 'Content-Type: application/json' \
           --data-raw '{"branch": "master"}'
+          
+    - name: Test CMD
+      run: |
+        echo "This is a test"
