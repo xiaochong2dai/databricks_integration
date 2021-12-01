@@ -19,3 +19,7 @@ jobs:
     - name: Test CMD
       run: |
         echo "This is a test"
+        
+    - name: Sleep 10 Sec
+      run: |
+        sleep 10
