@@ -14,6 +14,6 @@ jobs:
 
     - name: Trigger Databricks Repo Update
       run: curl --location --request PATCH 'https://dbc-6fe6e0d2-1c0d.cloud.databricks.com/api/2.0/repos/1642747384591653' \
-               --header 'Authorization: Bearer dapia519acd10a9577abd7eccf4a1f0976c6' \
+               --header 'Authorization: token dapia519acd10a9577abd7eccf4a1f0976c6' \
                --header 'Content-Type: application/json' \
                --data-raw '{"branch": "master"}'
