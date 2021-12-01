@@ -44,8 +44,8 @@ df.createOrReplaceTempView('_df')
 df.count()
 
 # COMMAND ----------
-df3 = df
-df3.count()
+df4 = df
+df4.count()
 
 # COMMAND ----------
 
