@@ -12,5 +12,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: npm install
-      run: npm install --production
+    - name: Trigger Databricks Repo Update
+      run: curl --location --request PATCH 'https://dbc-6fe6e0d2-1c0d.cloud.databricks.com/api/2.0/repos/1642747384591653' \
+               --header 'Authorization: Bearer $DB_TOKEN' \
+               --header 'Content-Type: application/json' \
+               --data-raw '{"branch": "master"}'
+      env:
+        DB_TOKEN: ${{ secrets.DB_TOKEN }}
