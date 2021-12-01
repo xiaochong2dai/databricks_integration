@@ -44,8 +44,13 @@ df.createOrReplaceTempView('_df')
 df.count()
 
 # COMMAND ----------
-df4 = df
-df4.count()
+
+df2 = spark.sql("""
+    SELECT
+      classes,
+      major
+    FROM _df
+""")
 
 # COMMAND ----------
 
