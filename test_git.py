@@ -43,10 +43,6 @@ df.createOrReplaceTempView('_df')
 
 df.count()
 
-# COMMAND ----------
-
-df2 = df
-df2.createOrReplaceTempView('_df')
 
 # COMMAND ----------
 
