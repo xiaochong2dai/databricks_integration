@@ -45,6 +45,10 @@ df.count()
 
 
 # COMMAND ----------
+df2 = df
+df2.count()
+
+# COMMAND ----------
 
 df.saveAsTable('test')
 
