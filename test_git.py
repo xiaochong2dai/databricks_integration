@@ -45,7 +45,7 @@ df.count()
 
 # COMMAND ----------
 
-df2 = spark.sql("""
+df3 = spark.sql("""
     SELECT
       classes,
       major
